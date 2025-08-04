@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "4e22020c-996a-4658-ba76-d00e5b4500de",
+		"name": "Data Driven Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25383195",
+		"_collection_link": "https://www.postman.com/material-technologist-75909479/workspace/atb13x/collection/25383195-4e22020c-996a-4658-ba76-d00e5b4500de?action=share&source=collection_link&creator=25383195"
+	},
+	"item": [
+		{
+			"name": "Login API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"{{emailID}}\",\r\n    \"password\": \"{{password}}\",\r\n    \"remember\": false,\r\n    \"recaptcha_response_field\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://app.vwo.com/login",
+					"protocol": "https",
+					"host": [
+						"app",
+						"vwo",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
