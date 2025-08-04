@@ -1,0 +1,2 @@
+npm -g i json-server
+npx json-server db.json
